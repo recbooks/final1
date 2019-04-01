@@ -1,0 +1,79 @@
+<html>
+
+
+ <head>
+
+
+<style>
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+{% extends 'layout.html' %}
+
+
+
+
+{% block title %} Home {% endblock %}
+
+
+
+
+
+{% block content %}
+
+
+<div class="container">
+
+
+ <div class="row">
+
+
+ <div  style="background-color: #FFFF00" align="center" >
+
+
+
+
+{% if session['name'] %}
+
+
+Welcome {{ session['name'] }}
+
+
+{% else %}
+
+
+
+
+
+{% endif %}
+
+
+ </div>
+
+
+
+
+ </div>
+
+
+</div>
+
+
+
+{% endblock %}
+
+
+
+</body>
+
+
+</html>
